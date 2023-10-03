@@ -1,0 +1,102 @@
+h1 {
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.clock {
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    position: relative;
+    margin: 0 auto;
+    background-image: url('./clook.png');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgba(0.25, 0.25, 0.25, 0.25);
+    border: 40px solid silver;
+}
+
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    background-color: #000;
+    position: absolute;
+    transform-origin: bottom center;
+    left: 50%;
+}
+
+.hour-hand {
+    width: 1%;
+    height: 17%;
+    bottom: 50%;
+    margin-left: -3px;
+}
+
+.minute-hand {
+    width: 0.8%;
+    height: 23%;
+    bottom: 50%;
+    margin-left: -2px;
+}
+
+.second-hand {
+    width: 0.5%;
+    height: 29%;
+    bottom: 50%;
+    margin-left: -1px;
+    background-color: red;
+}
+
+.clock-center {
+    width: 3%;
+    height: 3%;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock2 {
+    width: 50%;
+    height: 0;
+    padding-bottom: 20%;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 25%;
+    background-size: cover;
+    border-radius: 20%;
+    box-shadow: 10px 10px 20px rgba(0.25, 0.25, 0.25, 0.25);
+    border: 20px solid #808080;
+    background: radial-gradient(circle at center, #A9A9A9, whitesmoke);
+    justify-items: center;
+}
+
+.time {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 14%;
+}
+
+@media (max-width: 768px) {
+    .time {
+        font-size: 70px;
+    }
+
+    .clock {
+        border: 30px solid silver;
+    }
+}
+
+@media (max-width: 680px) {
+    .time {
+        font-size: 50px;
+    }
+
+    .clock {
+        border: 20px solid silver;
+    }
+}
+
